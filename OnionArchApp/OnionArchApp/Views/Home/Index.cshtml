@@ -27,12 +27,7 @@
                     <th>
                         @Html.DisplayNameFor(model => model.userAddress)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.createDataTime)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.updateDateTime)
-                    </th>
+                    
                     <th></th>
                 </tr>
             </thead>
@@ -52,12 +47,7 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.userAddress)
                         </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.createDataTime)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.updateDateTime)
-                        </td>
+                        
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.userId">Edit</a> |
                             <a asp-action="Details" asp-route-id="@item.userId">Details</a> |

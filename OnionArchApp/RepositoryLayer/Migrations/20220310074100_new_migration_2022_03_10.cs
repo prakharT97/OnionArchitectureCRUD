@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RepositoryLayer.Migrations
 {
-    public partial class Initial_Migration_2022_03_10 : Migration
+    public partial class new_migration_2022_03_10 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,12 +12,10 @@ namespace RepositoryLayer.Migrations
                 {
                     userId = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    userName = table.Column<string>(nullable: true),
-                    userPhone = table.Column<string>(nullable: true),
-                    userEmailId = table.Column<string>(nullable: true),
-                    userAddress = table.Column<string>(nullable: true),
-                    createDataTime = table.Column<DateTime>(nullable: false),
-                    updateDateTime = table.Column<DateTime>(nullable: false)
+                    userName = table.Column<string>(nullable: false),
+                    userPhone = table.Column<string>(nullable: false),
+                    userEmailId = table.Column<string>(nullable: false),
+                    userAddress = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
